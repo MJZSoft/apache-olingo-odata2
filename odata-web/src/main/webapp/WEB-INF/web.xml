@@ -3,13 +3,13 @@
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
-	<display-name>org.apache.olingo.odata2.ref.web</display-name>
+	<display-name>com.mjzsoft.ui5.odata2.ref.web</display-name>
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
 	</welcome-file-list>
-
+	
 	<servlet>
-		<servlet-name>ReferenceScenarioServlet</servlet-name>
+		<servlet-name>ComMjzsoftUi5OdataReferenceScenarioServlet</servlet-name>
 		<servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
@@ -17,14 +17,14 @@
 		</init-param>
 		<init-param>
 			<param-name>org.apache.olingo.odata2.service.factory</param-name>
-			<param-value>org.apache.olingo.odata2.ref.processor.ScenarioServiceFactory</param-value>
+			<param-value>com.mjzsoft.ui5.odata2.ref.processor.ScenarioServiceFactory</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>ReferenceScenarioServlet</servlet-name>
-		<url-pattern>/ReferenceScenario.svc/*</url-pattern>
+		<servlet-name>ComMjzsoftUi5OdataReferenceScenarioServlet</servlet-name>
+		<url-pattern>/v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/*</url-pattern>
 	</servlet-mapping>
 
 </web-app>

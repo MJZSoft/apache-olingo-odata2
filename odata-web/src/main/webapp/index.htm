@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Apache Olingo - OData2 Library</title>
+<style type="text/css">
+body {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: blue;
+	background-color: #ffffff;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted #4076cb;
+	outline-offset: -1px;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+a:hover {
+	color: #404a7e;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 9px 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 1;
+	color: blue;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 40px;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.logo {
+	float: right;
+}
+
+ul {
+	padding: 0;
+	margin: 0 0 9px 25px;
+}
+
+ul ul {
+	margin-bottom: 0;
+}
+
+li {
+	line-height: 18px;
+}
+
+hr {
+	margin: 18px 0;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #ffffff;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 10px;
+}
+
+th, td {
+	border: 1px solid;
+	padding: 20px;
+}
+
+.code {
+	font-family: "Courier New", monospace;
+	font-size: 13px;
+	line-height: 18px;
+}
+</style>
+</head>
+<body>
+	<h1>MJZSoft UI5 OData (by Apache Olingo - OData2 Library)</h1>
+	<hr />
+	<h2>Reference Scenario</h2>
+	<table>
+		<tr>
+			<td valign="top">
+				<h3>JAX-RS</h3>
+				<h3>Service Document and Metadata</h3>
+				<ul>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV?_wadl"
+						target="_blank">wadl</a></li>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/"
+						target="_blank">service document</a></li>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/$metadata"
+						target="_blank">metadata</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/$metadata?odata-debug=json"
+						target="_blank">Debug metadata in JSON format</a></li>
+				</ul>
+				<h3>EntitySets</h3>
+				<ul>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/EmployeeSet"
+						target="_blank">EmployeeSet</a></li>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/ManagerSet"
+						target="_blank">ManagerSet</a></li>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/BuildingSet"
+						target="_blank">BuildingSet</a></li>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/RoomSet"
+						target="_blank">RoomSet</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/Container2.PhotoSet"
+						target="_blank">Container2.PhotoSet</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/EmployeeSet?odata-debug=html"
+						target="_blank">Debug Employees in HTML format</a></li>
+				</ul>
+				<h3>Filtering</h3>
+				<ul>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/EmployeeSet/$count"
+						target="_blank">Count Employees</a></li>
+				</ul>
+				<h3>Entities</h3>
+				<ul>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/EmployeeSet('1')"
+						target="_blank">EmployeeSet('1')</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/ManagerSet('1')"
+						target="_blank">ManagerSet('1')</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/BuildingSet('1')"
+						target="_blank">BuildingSet('1')</a></li>
+					<li><a href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/RoomSet('1')"
+						target="_blank">RoomSet('1')</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/Container2.PhotoSet(Id=4,Type='foo')"
+						target="_blank">Container2.PhotoSet(Id=4,Type='foo')</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/Container2.PhotoSet(Id=1,Type='image%2Fpng')"
+						target="_blank">Container2.PhotoSet(Id=1,Type='image%2Fpng')
+							{Works when slash in URL is activated in Tomcat}</a></li>
+					<li><a
+						href="v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/Container2.PhotoSet(Id=2,Type='image%2Fbmp')/$value"
+						target="_blank">Container2.PhotoSet(Id=2,Type='image%2Fbmp')/$value
+							{The picture itself}</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

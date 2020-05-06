@@ -16,23 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.model;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.mjzsoft.ui5.odata2.ref.model;
 
 /**
  *  
  */
-public class Manager extends Employee {
+public class ModelException extends RuntimeException {
 
-	private List<Employee> employees = new ArrayList<Employee>();
+	private static final long serialVersionUID = 1L;
 
-	public Manager(final int id, final String name) {
-		super(id, name);
+	public ModelException(final Exception e) {
+		super(e);
 	}
 
-	public List<Employee> getEmployees() {
-		return employees;
-	}
 }

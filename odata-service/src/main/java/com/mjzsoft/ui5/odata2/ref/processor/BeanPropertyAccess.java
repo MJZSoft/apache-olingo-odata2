@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.processor;
+package com.mjzsoft.ui5.odata2.ref.processor;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

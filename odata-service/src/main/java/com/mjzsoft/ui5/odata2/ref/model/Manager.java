@@ -16,40 +16,23 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.model;
+package com.mjzsoft.ui5.odata2.ref.model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *  
  */
-public class City {
+public class Manager extends Employee {
 
-	private String postalCode;
-	private String cityName;
+	private List<Employee> employees = new ArrayList<Employee>();
 
-	public City(final String postalCode, final String name) {
-		this.postalCode = postalCode;
-		cityName = name;
+	public Manager(final int id, final String name) {
+		super(id, name);
 	}
 
-	public void setPostalCode(final String postalCode) {
-		this.postalCode = postalCode;
+	public List<Employee> getEmployees() {
+		return employees;
 	}
-
-	public String getPostalCode() {
-		return postalCode;
-	}
-
-	public void setCityName(final String cityName) {
-		this.cityName = cityName;
-	}
-
-	public String getCityName() {
-		return cityName;
-	}
-
-	@Override
-	public String toString() {
-		return String.format("%s, %s", cityName, postalCode);
-	}
-
 }

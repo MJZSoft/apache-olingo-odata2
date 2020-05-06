@@ -16,39 +16,40 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.model;
+package com.mjzsoft.ui5.odata2.ref.model;
 
 /**
  *  
  */
-public class Location {
-	private String country;
-	private City city;
+public class City {
 
-	public Location(final String country, final String postalCode, final String cityName) {
-		this.country = country;
-		city = new City(postalCode, cityName);
+	private String postalCode;
+	private String cityName;
+
+	public City(final String postalCode, final String name) {
+		this.postalCode = postalCode;
+		cityName = name;
 	}
 
-	public void setCountry(final String country) {
-		this.country = country;
+	public void setPostalCode(final String postalCode) {
+		this.postalCode = postalCode;
 	}
 
-	public String getCountry() {
-		return country;
+	public String getPostalCode() {
+		return postalCode;
 	}
 
-	public void setCity(final City city) {
-		this.city = city;
+	public void setCityName(final String cityName) {
+		this.cityName = cityName;
 	}
 
-	public City getCity() {
-		return city;
+	public String getCityName() {
+		return cityName;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("%s, %s", country, city.toString());
+		return String.format("%s, %s", cityName, postalCode);
 	}
 
 }

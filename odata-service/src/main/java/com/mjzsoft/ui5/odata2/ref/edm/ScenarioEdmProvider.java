@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.edm;
+package com.mjzsoft.ui5.odata2.ref.edm;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -59,21 +59,22 @@ import org.apache.olingo.odata2.api.exception.ODataException;
  * 
  */
 public class ScenarioEdmProvider extends EdmProvider {
-
+	// define namespaces
 	public static final String NAMESPACE_1 = "RefScenario";
 	public static final String NAMESPACE_2 = "RefScenario2";
-
+	// define entities of the first namespace
 	private static final FullQualifiedName ENTITY_TYPE_1_1 = new FullQualifiedName(NAMESPACE_1, "Employee");
 	private static final FullQualifiedName ENTITY_TYPE_1_BASE = new FullQualifiedName(NAMESPACE_1, "Base");
 	private static final FullQualifiedName ENTITY_TYPE_1_2 = new FullQualifiedName(NAMESPACE_1, "Team");
 	private static final FullQualifiedName ENTITY_TYPE_1_3 = new FullQualifiedName(NAMESPACE_1, "Room");
 	private static final FullQualifiedName ENTITY_TYPE_1_4 = new FullQualifiedName(NAMESPACE_1, "Manager");
 	private static final FullQualifiedName ENTITY_TYPE_1_5 = new FullQualifiedName(NAMESPACE_1, "Building");
+	// define entities of the second namespace
 	private static final FullQualifiedName ENTITY_TYPE_2_1 = new FullQualifiedName(NAMESPACE_2, "Photo");
-
+	// define complex types
 	private static final FullQualifiedName COMPLEX_TYPE_1 = new FullQualifiedName(NAMESPACE_1, "c_Location");
 	private static final FullQualifiedName COMPLEX_TYPE_2 = new FullQualifiedName(NAMESPACE_1, "c_City");
-
+	// define associations
 	private static final FullQualifiedName ASSOCIATION_1_1 = new FullQualifiedName(NAMESPACE_1, "ManagerEmployees");
 	private static final FullQualifiedName ASSOCIATION_1_2 = new FullQualifiedName(NAMESPACE_1, "TeamEmployees");
 	private static final FullQualifiedName ASSOCIATION_1_3 = new FullQualifiedName(NAMESPACE_1, "RoomEmployees");
@@ -87,13 +88,13 @@ public class ScenarioEdmProvider extends EdmProvider {
 
 	private static final String ENTITY_CONTAINER_1 = "Container1";
 	private static final String ENTITY_CONTAINER_2 = "Container2";
-
-	private static final String ENTITY_SET_1_1 = "Employees";
-	private static final String ENTITY_SET_1_2 = "Teams";
-	private static final String ENTITY_SET_1_3 = "Rooms";
-	private static final String ENTITY_SET_1_4 = "Managers";
-	private static final String ENTITY_SET_1_5 = "Buildings";
-	private static final String ENTITY_SET_2_1 = "Photos";
+	// define the SET names
+	private static final String ENTITY_SET_1_1 = "EmployeeSet";
+	private static final String ENTITY_SET_1_2 = "TeamSet";
+	private static final String ENTITY_SET_1_3 = "RoomSet";
+	private static final String ENTITY_SET_1_4 = "ManagerSet";
+	private static final String ENTITY_SET_1_5 = "BuildingSet";
+	private static final String ENTITY_SET_2_1 = "PhotoSet";
 
 	private static final String FUNCTION_IMPORT_1 = "EmployeeSearch";
 	private static final String FUNCTION_IMPORT_2 = "AllLocations";

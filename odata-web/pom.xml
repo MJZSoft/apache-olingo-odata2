@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.apache.olingo</groupId>
-		<artifactId>com.mjzsoft.odata.parent</artifactId>
-		<version>1.0.0</version>
+		<groupId>com.mjzsoft.ui5.odata2</groupId>
+		<artifactId>com.mjzsoft.ui5.odata2.parent</artifactId>
+		<version>2.0.0</version>
 	</parent>
-	<artifactId>odata2.web</artifactId>
-	<name>Odata-WebApp</name>
+	<artifactId>com.mjzsoft.ui5.odata2.webapp</artifactId>
+	<name>Com-Mjzsoft-ui5-Odata2-WebApp</name>
 
 	<packaging>war</packaging>
 	<build>
@@ -26,9 +26,10 @@
 			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
 			<version>${version.apache.cxf}</version>
 		</dependency>
+		<!-- Connection point to server app -->
 		<dependency>
-			<groupId>org.apache.olingo</groupId>
-			<artifactId>odata.service</artifactId>
+			<groupId>com.mjzsoft.ui5.odata2</groupId>
+			<artifactId>com.mjzsoft.ui5.odata2.service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>

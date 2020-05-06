@@ -16,7 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.processor;
+package com.mjzsoft.ui5.odata2.ref.processor;
+
+// Java packages
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -28,6 +30,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+
+// Olingo packages
 
 import org.apache.olingo.odata2.api.ODataCallback;
 import org.apache.olingo.odata2.api.batch.BatchHandler;
@@ -111,7 +115,10 @@ import org.apache.olingo.odata2.api.uri.info.GetMediaResourceUriInfo;
 import org.apache.olingo.odata2.api.uri.info.GetSimplePropertyUriInfo;
 import org.apache.olingo.odata2.api.uri.info.PostUriInfo;
 import org.apache.olingo.odata2.api.uri.info.PutMergePatchUriInfo;
-import org.apache.olingo.odata2.ref.processor.ScenarioDataSource.BinaryData;
+
+// Project Packages
+
+import com.mjzsoft.ui5.odata2.ref.processor.ScenarioDataSource.BinaryData;
 
 /**
  * Implementation of the centralized parts of OData processing, allowing to use

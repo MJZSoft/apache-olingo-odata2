@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.model;
+package com.mjzsoft.ui5.odata2.ref.model;
 
 import java.util.ArrayList;
 import java.util.List;

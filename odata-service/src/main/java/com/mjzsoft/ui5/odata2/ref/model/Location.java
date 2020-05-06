@@ -16,61 +16,39 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.olingo.odata2.ref.model;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.mjzsoft.ui5.odata2.ref.model;
 
 /**
-*  
-*/
-public class Team {
-	private final int id;
-	private String name;
-	private Boolean isScrumTeam;
-	private List<Employee> employees = new ArrayList<Employee>();
+ *  
+ */
+public class Location {
+	private String country;
+	private City city;
 
-	public Team(final int id, final String name) {
-		this.id = id;
-		setName(name);
+	public Location(final String country, final String postalCode, final String cityName) {
+		this.country = country;
+		city = new City(postalCode, cityName);
 	}
 
-	public String getId() {
-		return Integer.toString(id);
+	public void setCountry(final String country) {
+		this.country = country;
 	}
 
-	public String getName() {
-		return name;
+	public String getCountry() {
+		return country;
 	}
 
-	public void setName(final String name) {
-		this.name = name;
+	public void setCity(final City city) {
+		this.city = city;
 	}
 
-	public boolean isScrumTeam() {
-		return isScrumTeam;
-	}
-
-	public void setScrumTeam(final boolean isScrumTeam) {
-		this.isScrumTeam = isScrumTeam;
-	}
-
-	public List<Employee> getEmployees() {
-		return employees;
-	}
-
-	@Override
-	public int hashCode() {
-		return id;
-	}
-
-	@Override
-	public boolean equals(final Object obj) {
-		return this == obj || obj != null && getClass() == obj.getClass() && id == ((Team) obj).id;
+	public City getCity() {
+		return city;
 	}
 
 	@Override
 	public String toString() {
-		return "{\"Id\":\"" + id + "\",\"Name\":\"" + name + "\",\"isScrumTeam\":" + isScrumTeam + "}";
+		return String.format("%s, %s", country, city.toString());
 	}
+
 }
