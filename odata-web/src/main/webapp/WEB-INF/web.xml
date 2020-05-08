@@ -24,7 +24,7 @@
 
 	<servlet-mapping>
 		<servlet-name>ComMjzsoftUi5OdataReferenceScenarioServlet</servlet-name>
-		<url-pattern>/v2/sap/opu/odata/cimtag/ODATA_ASK_SRV/*</url-pattern>
+		<url-pattern>/v2/sap/opu/odata/mjzsoft/ODATA_ASK_SRV/*</url-pattern>
 	</servlet-mapping>
 
 </web-app>
